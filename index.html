@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Evidence-based pet care advice for every pet lover. Learn how to care for your pets and get expert tips for every stage of their lives.">
-  <meta name="keywords" content="pet care, dogs, cats, birds, small animals, fish, pet adoption">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Evidence-based pet care advice for every pet lover. Learn how to care for your pets and get expert tips for every stage of their lives." />
+  <meta name="keywords" content="pet care, dogs, cats, birds, small animals, fish, pet adoption" />
   <title>Paradigm Pet Professionals</title>
   <style>
-    /* General Styles */
     body {
       font-family: 'Roboto', Arial, sans-serif;
       margin: 0;
@@ -127,16 +126,6 @@
       background-color: #ffcc00;
     }
 
-    .success-message {
-      background-color: #4CAF50;
-      color: white;
-      padding: 1em;
-      border-radius: 5px;
-      margin-top: 2em;
-      text-align: center;
-      display: none;
-    }
-
     footer {
       background-color: #003B6D;
       color: #BDBDBD;
@@ -146,7 +135,6 @@
       margin-top: 2em;
     }
 
-    /* Responsive Design */
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
@@ -174,7 +162,7 @@
   </header>
 
   <nav>
-    <img src="../images/Picture1.png" alt="Logo">
+    <img src="../images/Picture1.png" alt="Logo" />
     <div>
       <a href="index.html">Home</a>
       <a href="cats.html">Cats</a>
@@ -202,60 +190,82 @@
 
     <section id="cats">
       <h2>Cat Care</h2>
-      <img src="../images/Cat1.jpg" alt="Picture of a black cat">
+      <img src="../images/Cat1.jpg" alt="Picture of a black cat" />
     </section>
 
     <section id="dogs">
       <h2>Dog Care</h2>
-      <img src="../images/Dog1.jpg" alt="Picture of two dogs">
+      <img src="../images/Dog1.jpg" alt="Picture of two dogs" />
     </section>
 
     <section id="birds">
       <h2>Bird Care</h2>
-      <img src="../images/Bird1.jpg" alt="Picture of a bird">
+      <img src="../images/Bird1.jpg" alt="Picture of a bird" />
     </section>
 
     <section id="fish">
       <h2>Fish Care</h2>
-      <img src="../images/Fish1.jpg" alt="Picture of a fish">
+      <img src="../images/Fish1.jpg" alt="Picture of a fish" />
     </section>
 
     <section id="small">
       <h2>Small Animal Care</h2>
-      <img src="../images/Small1.jpg" alt="Picture of a small animal">
+      <img src="../images/Small1.jpg" alt="Picture of a small animal" />
     </section>
 
     <section id="contact">
       <h2>Request a Consultation</h2>
-      <form action="#contact" method="POST" class="contact-form">
+      <form action="thankyou.html" method="POST" class="contact-form">
         <fieldset>
           <legend>Contact Information</legend>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Email Address" required>
-          <input type="tel" placeholder="Phone Number" required>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
         </fieldset>
 
         <fieldset>
           <legend>Pet Information</legend>
-          <select required>
+          <select name="timezone" required>
             <option value="">Select Your Time Zone</option>
             <option>PST</option>
             <option>MST</option>
             <option>CST</option>
             <option>EST</option>
           </select>
-          <input type="text" placeholder="Pet's Name" required>
-          <input type="text" placeholder="Pet's Type" required>
-          <input type="number" placeholder="Pet's Age" required>
-          <textarea placeholder="Tell us more..." rows="4"></textarea>
+          <input type="text" name="petname" placeholder="Pet's Name" required />
+          <input type="text" name="pettype" placeholder="Pet's Type" required />
+          <input type="number" name="petage" placeholder="Pet's Age" required />
+          <textarea name="moreinfo" placeholder="Tell us more..." rows="4"></textarea>
         </fieldset>
 
         <button type="submit">Submit</button>
       </form>
+    </section>
 
-      <div class="success-message">
-        Consultation successfully sent! Please give us 1 or 2 business days to get back to you.
-      </div>
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>General Questions</h3>
+      <details>
+        <summary><strong>Q: How often should I feed my pets?</strong></summary>
+        <p>A: Most pets should be fed 1-2 times a day. Refer to specific care guidelines for your pet type.</p>
+      </details>
+
+      <details>
+        <summary><strong>Q: How can I ensure my pet stays healthy?</strong></summary>
+        <p>A: Regular vet check-ups, a balanced diet, and appropriate exercise are key to your pet’s health.</p>
+      </details>
+
+      <h3>Fish Care</h3>
+      <details>
+        <summary><strong>Q: How do I maintain water quality for my fish?</strong></summary>
+        <p>A: Regular water changes, filtering, and avoiding overfeeding are essential to maintain water quality.</p>
+      </details>
+
+      <details>
+        <summary><strong>Q: What is the ideal water temperature for my fish?</strong></summary>
+        <p>A: Most fish thrive at temperatures between 75-80°F (24-27°C), but this can vary depending on species.</p>
+      </details>
     </section>
   </main>
 
